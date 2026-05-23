@@ -5,6 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Klar Clinic — Design System</title>
   <link rel="stylesheet" href="/style.css" />
+
+  <!-- Foundation token config: the catalog of foundation utility classes the
+       Klar editor can offer and apply to any element. Kept in lockstep with the
+       real utilities in /style.css and with the Foundations sections below.
+       Every value references classes that exist in style.css (no phantoms);
+       backgrounds are paired with a readable foreground where needed. -->
+  <script type="application/json" data-klar-ds>
+  {
+    "classes": {
+      "Text colors": [
+        { "label": "Body", "value": "text-foreground" },
+        { "label": "Muted", "value": "text-muted-foreground" },
+        { "label": "Subtle", "value": "text-subtle-foreground" },
+        { "label": "Accent", "value": "text-accent" },
+        { "label": "Gold", "value": "text-gold" },
+        { "label": "Destructive", "value": "text-destructive" }
+      ],
+      "Background colors": [
+        { "label": "Page", "value": "bg-background text-foreground" },
+        { "label": "Card", "value": "bg-card text-foreground" },
+        { "label": "Primary", "value": "bg-primary" },
+        { "label": "Brand blue", "value": "bg-accent" },
+        { "label": "Secondary", "value": "bg-secondary" },
+        { "label": "Grey", "value": "bg-muted text-foreground" },
+        { "label": "Accent soft", "value": "bg-accent-soft text-accent" },
+        { "label": "Destructive", "value": "bg-destructive" }
+      ],
+      "Typography": [
+        { "label": "Display", "value": "text-5xl font-thin" },
+        { "label": "Heading 1", "value": "text-4xl font-light" },
+        { "label": "Heading 2", "value": "text-3xl font-light" },
+        { "label": "Heading 3", "value": "text-2xl font-semibold" },
+        { "label": "Lead", "value": "text-xl font-light" },
+        { "label": "Body", "value": "text-base" },
+        { "label": "Small", "value": "text-sm" },
+        { "label": "Overline", "value": "text-xs uppercase tracking-wider" }
+      ],
+      "Spacing": [
+        { "label": "Small", "value": "p-4" },
+        { "label": "Medium", "value": "p-6" },
+        { "label": "Large", "value": "p-8" },
+        { "label": "X-Large", "value": "p-12" }
+      ],
+      "Radius": [
+        { "label": "Small", "value": "rounded-sm" },
+        { "label": "Medium", "value": "rounded-md" },
+        { "label": "Large", "value": "rounded-lg" },
+        { "label": "X-Large", "value": "rounded-xl" },
+        { "label": "Full", "value": "rounded-full" }
+      ],
+      "Shadows": [
+        { "label": "Small", "value": "shadow-sm" },
+        { "label": "Medium", "value": "shadow-md" },
+        { "label": "Large", "value": "shadow-lg" }
+      ]
+    }
+  }
+  </script>
+
   <style>
     /* =====================================================================
        DOCUMENTATION CHROME ONLY — not part of the design system.
