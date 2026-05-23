@@ -777,6 +777,8 @@ textarea {
 }
 .nav-link:hover { color: var(--foreground); }
 .nav-link:hover::after { width: 100%; }
+.nav-link--active { color: var(--foreground); }
+.nav-link--active::after { width: 100%; }
 
 /* Hamburger toggle */
 .nav-toggle {
@@ -837,6 +839,8 @@ textarea {
   padding: var(--space-28) var(--space-8) var(--space-24);
 }
 .hero__content { max-width: var(--content-width-narrow); }
+/* Compact hero for interior/sub pages — clears the fixed header */
+.hero--compact { min-height: auto; padding-block: calc(var(--header-height) + var(--space-20)) var(--space-16); }
 .hero__title {
   font-size: var(--text-hero);
   font-weight: var(--font-thin);
@@ -1067,6 +1071,106 @@ textarea {
 }
 .footer-link:hover { color: var(--foreground); }
 
+/* --- Showcase panel (large gradient icon panel) ----------------------- */
+.showcase-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: var(--space-10);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(135deg, rgba(91, 138, 154, 0.15), rgba(201, 169, 110, 0.12));
+}
+.showcase-panel__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background: var(--card-solid);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--shadow-md);
+}
+.showcase-panel__icon svg { width: 52px; height: 52px; stroke: var(--accent); fill: none; stroke-width: 1.25; }
+
+/* --- Steps (process timeline) ----------------------------------------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
+.step { position: relative; }
+.step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-5);
+}
+.step__title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--foreground);
+  margin-bottom: var(--space-2);
+}
+.step__text {
+  font-size: var(--text-sm);
+  font-weight: var(--font-light);
+  line-height: var(--leading-relaxed);
+  color: var(--subtle-foreground);
+}
+
+/* --- Accordion (FAQ) -------------------------------------------------- */
+.accordion {
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  overflow: hidden;
+}
+.accordion__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--foreground);
+  cursor: pointer;
+  list-style: none;
+}
+.accordion__summary::-webkit-details-marker { display: none; }
+.accordion__summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-right: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+.accordion[open] .accordion__summary::after { transform: rotate(-135deg); }
+.accordion__body {
+  padding: 0 var(--space-6) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: var(--font-light);
+  line-height: var(--leading-loose);
+  color: var(--muted-foreground);
+}
+
 /* ==========================================================================
    6. MOTION & JAVASCRIPT INTERACTION HOOKS
    The page's frozen inline script reads/writes the exact class strings below.
@@ -1263,6 +1367,7 @@ textarea {
 /* Component responsiveness (max-width — collapse layouts on small screens) */
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
   .split { grid-template-columns: 1fr; gap: var(--space-12); }
 }
 
@@ -1271,6 +1376,7 @@ textarea {
   .nav-toggle { display: flex; }
   .grid-2,
   .grid-3 { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  .steps { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
   .field-row { grid-template-columns: 1fr; }
   .section { padding-block: var(--space-20); }
   .container { padding-inline: var(--space-5); }

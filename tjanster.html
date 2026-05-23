@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjänster — Dr Sophie Lantz Stockholm</title>
+  <meta name="description" content="Specialiserad ortopedisk vård för axel-, armbågs- och knäbesvär, med ultraljudsdiagnostik. Så går det till och vanliga frågor.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__shape ambient__shape--1"></div>
+    <div class="ambient__shape ambient__shape--2"></div>
+    <div class="ambient__shape ambient__shape--3"></div>
+    <div class="ambient__shape ambient__shape--4"></div>
+    <div class="ambient__shape ambient__shape--5"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="site-header" id="elaraNav">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo-drlantzstockholm.png" alt="Dr Lantz Stockholm">
+      </a>
+      <ul class="nav">
+        <li><a href="index.html#about" class="nav-link">Om mig</a></li>
+        <li><a href="tjanster.html" class="nav-link nav-link--active" aria-current="page">Tjänster</a></li>
+        <li><a href="index.html#why" class="nav-link">Varför mig</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Omdömen</a></li>
+        <li><a href="index.html#contact" class="btn btn-primary btn-sm">Boka tid</a></li>
+      </ul>
+      <button class="nav-toggle" id="elaraMobileToggle" aria-label="Öppna meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="elaraMobileMenu">
+    <a href="index.html#about" class="mobile-menu__link" data-mobile-link="">Om mig</a>
+    <a href="tjanster.html" class="mobile-menu__link" data-mobile-link="">Tjänster</a>
+    <a href="index.html#why" class="mobile-menu__link" data-mobile-link="">Varför mig</a>
+    <a href="index.html#testimonials" class="mobile-menu__link" data-mobile-link="">Omdömen</a>
+    <a href="index.html#contact" class="mobile-menu__link" data-mobile-link="">Boka tid</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero hero--compact" id="hero">
+    <div class="hero__content">
+      <div class="badge elara-fade-up">
+        <span class="badge__dot"></span>
+        Tjänster
+      </div>
+      <h1 class="hero__title elara-fade-up elara-fade-up--d1">
+        Specialiserad<br><strong>ortopedisk vård</strong>
+      </h1>
+      <p class="hero__lead elara-fade-up elara-fade-up--d2">
+        Utredning och behandling av axel-, armbågs- och knäbesvär. Ultraljud
+        används regelbundet för att hjälpa till vid diagnos av dina besvär.
+      </p>
+      <div class="hero__actions elara-fade-up elara-fade-up--d3">
+        <a href="index.html#contact" class="btn btn-primary">
+          Boka tid
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#process" class="btn btn-outline">Så går det till</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service: Axel -->
+  <section class="section" id="axel">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow elara-fade-up">Axel</span>
+          <h2 class="section-title elara-fade-up elara-fade-up--d1">
+            Medicinsk undersökning av <strong>axelbesvär</strong>
+          </h2>
+          <p class="prose elara-fade-up elara-fade-up--d2">
+            Axelbesvär utreds med klinisk undersökning och ultraljudsdiagnostik på plats.
+            Du får en tydlig bedömning och en plan för behandling, uppföljning och utredning vid behov.
+          </p>
+          <ul class="check-list elara-fade-up elara-fade-up--d3">
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Ultraljudsdiagnostik på plats</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Bedömning av rotatorkuff och impingement</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Behandling, uppföljning och utredning vid behov</span>
+            </li>
+          </ul>
+        </div>
+        <div class="showcase-panel elara-fade-up elara-fade-up--d2">
+          <span class="showcase-panel__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"></circle><path d="M12 8v4"></path><path d="M5 11c0-1 1.5-3 7-3s7 2 7 3"></path><path d="M5 11v2c0 1 0 3 2 4"></path><path d="M19 11v2c0 1 0 3-2 4"></path></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service: Armbåge -->
+  <section class="section section--tight" id="armbage">
+    <div class="container">
+      <div class="split">
+        <div class="showcase-panel elara-fade-up">
+          <span class="showcase-panel__icon">
+            <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0"></path><path d="M14 10V4a2 2 0 0 0-4 0v2"></path><path d="M10 10.5V6a2 2 0 0 0-4 0v8"></path><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-5.7-2.4"></path><path d="M6 14l-1.5-1.5a2 2 0 0 0-3 0 2 2 0 0 0 0 3L6 20"></path></svg>
+          </span>
+        </div>
+        <div>
+          <span class="eyebrow elara-fade-up">Armbåge</span>
+          <h2 class="section-title elara-fade-up elara-fade-up--d1">
+            Bedömning och behandling av <strong>armbågsbesvär</strong>
+          </h2>
+          <p class="prose elara-fade-up elara-fade-up--d2">
+            Omfattande vård av armbågsbesvär — från konservativ behandling till kirurgi.
+            Erfarenhet av både öppen och artroskopisk teknik samt idrottsrelaterade besvär.
+          </p>
+          <ul class="check-list elara-fade-up elara-fade-up--d3">
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Tennisarmbåge och golfarmbåge</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Både öppen och artroskopisk kirurgi</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Idrottsrelaterade besvär i alla åldrar</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service: Knä -->
+  <section class="section section--tight" id="kna">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow elara-fade-up">Knä</span>
+          <h2 class="section-title elara-fade-up elara-fade-up--d1">
+            Diagnos och behandling av <strong>knäbesvär</strong>
+          </h2>
+          <p class="prose elara-fade-up elara-fade-up--d2">
+            Knäbesvär utreds med ultraljudsundersökning och idrottsmedicinsk expertis.
+            Fokus på en tydlig diagnos, behandling och en plan för rehabilitering.
+          </p>
+          <ul class="check-list elara-fade-up elara-fade-up--d3">
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Menisk- och ledbandsbesvär</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Ultraljudsundersökning</span>
+            </li>
+            <li class="check-list__item">
+              <span class="icon-box icon-box--sm"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <span>Rehabilitering och uppföljning</span>
+            </li>
+          </ul>
+        </div>
+        <div class="showcase-panel elara-fade-up elara-fade-up--d2">
+          <span class="showcase-panel__icon">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow elara-fade-up">Så går det till</span>
+        <h2 class="section-title elara-fade-up elara-fade-up--d1">
+          Från bokning till <strong>uppföljning</strong>
+        </h2>
+        <p class="section-subtitle elara-fade-up elara-fade-up--d2">
+          En tydlig och personlig process — fyra enkla steg från första kontakt till färdig behandlingsplan.
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step elara-fade-up elara-fade-up--d1">
+          <div class="step__num">1</div>
+          <h3 class="step__title">Boka</h3>
+          <p class="step__text">Begär en tid via formuläret eller kontakta mig direkt.</p>
+        </div>
+        <div class="step elara-fade-up elara-fade-up--d2">
+          <div class="step__num">2</div>
+          <h3 class="step__title">Undersökning</h3>
+          <p class="step__text">En noggrann klinisk undersökning, med ultraljud vid behov.</p>
+        </div>
+        <div class="step elara-fade-up elara-fade-up--d3">
+          <div class="step__num">3</div>
+          <h3 class="step__title">Diagnos</h3>
+          <p class="step__text">Tydlig diagnos och en personlig behandlingsplan.</p>
+        </div>
+        <div class="step elara-fade-up elara-fade-up--d4">
+          <div class="step__num">4</div>
+          <h3 class="step__title">Uppföljning</h3>
+          <p class="step__text">Behandling, uppföljning och utredning vid behov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tight" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <span class="eyebrow elara-fade-up">Vanliga frågor</span>
+        <h2 class="section-title elara-fade-up elara-fade-up--d1">
+          Bra att <strong>veta</strong>
+        </h2>
+      </div>
+      <div class="elara-fade-up elara-fade-up--d2">
+        <details class="accordion" open>
+          <summary class="accordion__summary">Vad kostar ett besök?</summary>
+          <div class="accordion__body">
+            Avgift för läkarbesök är 950 kr. Vården är helt privat, så frikort gäller inte.
+          </div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__summary">Behöver jag en remiss?</summary>
+          <div class="accordion__body">
+            Nej, ingen remiss krävs. Jag tar emot patienter helt privat utan avtal med regionen
+            (tidigare landsting) eller privata försäkringsbolag.
+          </div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__summary">Använder ni ultraljud?</summary>
+          <div class="accordion__body">
+            Ja. Ultraljud används regelbundet för att hjälpa till vid diagnos av dina besvär och för att vägleda behandling.
+          </div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__summary">Skriver ni intyg?</summary>
+          <div class="accordion__body">
+            Intyg utfärdas på begäran och bekostas av försäkringsbolaget.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--tight" id="cta">
+    <div class="container container--narrow">
+      <div class="cta glass elara-fade-up">
+        <h2 class="cta__title">Redo att <strong>boka din tid?</strong></h2>
+        <p class="cta__text">
+          Ta första steget mot återhämtning. Använd bokningslänken eller kontakta mig direkt.
+        </p>
+        <div class="cta__actions">
+          <a href="index.html#contact" class="btn btn-primary">
+            Boka tid
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="index.html" class="btn btn-outline">Till startsidan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">© 2026 Dr Sophie Lantz Stockholm. Alla rättigheter förbehållna.</p>
+      <ul class="footer-links">
+        <li><a href="#" class="footer-link">Integritetspolicy</a></li>
+        <li><a href="#" class="footer-link">Användarvillkor</a></li>
+        <li><a href="#" class="footer-link">Tillgänglighet</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ====== Navigation scroll effect ======
+      var nav = document.getElementById('elaraNav');
+      if (nav) {
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 50) {
+            nav.classList.add('elara-nav--scrolled');
+          } else {
+            nav.classList.remove('elara-nav--scrolled');
+          }
+        }, { passive: true });
+      }
+
+      // ====== Mobile menu toggle ======
+      var mobileToggle = document.getElementById('elaraMobileToggle');
+      var mobileMenu = document.getElementById('elaraMobileMenu');
+      var mobileLinks = document.querySelectorAll('[data-mobile-link]');
+
+      function closeMobileMenu() {
+        if (!mobileMenu || !mobileToggle) return;
+        mobileMenu.classList.remove('elara-mobile-menu--open');
+        mobileToggle.classList.remove('elara-nav__mobile-toggle--active');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', function () {
+          var isOpen = mobileMenu.classList.contains('elara-mobile-menu--open');
+          mobileMenu.classList.toggle('elara-mobile-menu--open');
+          mobileToggle.classList.toggle('elara-nav__mobile-toggle--active');
+          document.body.style.overflow = isOpen ? '' : 'hidden';
+        });
+      }
+      mobileLinks.forEach(function (link) {
+        link.addEventListener('click', closeMobileMenu);
+      });
+
+      // ====== Scroll reveal animations ======
+      var fadeElements = document.querySelectorAll('.elara-fade-up');
+
+      function revealOnScroll() {
+        var triggerPoint = window.innerHeight * 0.88;
+        fadeElements.forEach(function (el) {
+          if (el.getBoundingClientRect().top < triggerPoint) {
+            el.classList.add('elara-fade-up--visible');
+          }
+        });
+      }
+      revealOnScroll();
+      window.addEventListener('scroll', revealOnScroll, { passive: true });
+
+      // ====== Smooth anchor scrolling (same-page anchors only) ======
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            var navHeight = nav ? nav.offsetHeight : 0;
+            var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
