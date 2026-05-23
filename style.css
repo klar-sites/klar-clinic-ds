@@ -148,6 +148,7 @@
   --content-width: 1180px;
   --content-width-wide: 1280px;
   --content-width-narrow: 800px;
+  --content-width-prose: 720px;
   --header-height: 72px;
 
   /* --- Radii ---------------------------------------------------------- */
@@ -1169,6 +1170,124 @@ textarea {
   font-weight: var(--font-light);
   line-height: var(--leading-loose);
   color: var(--muted-foreground);
+}
+
+/* --- Article / long-form editorial content ---------------------------- */
+.article {
+  max-width: var(--content-width-prose);
+  margin-inline: auto;
+}
+
+.article-header { margin-bottom: var(--space-10); }
+.article-title {
+  font-size: var(--text-display);
+  font-weight: var(--font-light);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--foreground);
+  margin-block: var(--space-4) var(--space-5);
+}
+.article-title strong { font-weight: var(--font-semibold); }
+.article-lead {
+  font-size: var(--text-xl);
+  font-weight: var(--font-light);
+  line-height: var(--leading-loose);
+  color: var(--muted-foreground);
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+.article-meta__text { font-size: var(--text-sm); color: var(--subtle-foreground); }
+.article-meta__name { color: var(--foreground); font-weight: var(--font-medium); }
+
+/* Figure (image or illustrated panel) with caption */
+.figure { margin-top: var(--space-10); }
+.figure img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+.figure__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 280px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, rgba(91, 138, 154, 0.15), rgba(201, 169, 110, 0.12));
+}
+.figure__panel svg { width: 64px; height: 64px; stroke: var(--accent); fill: none; stroke-width: 1.25; }
+.figure--lead { margin-top: 0; }
+.figure--lead img { aspect-ratio: 16 / 10; object-position: center 22%; }
+.figure figcaption {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-light);
+  color: var(--subtle-foreground);
+  text-align: center;
+}
+
+/* Prose body — auto-styles standard flow content */
+.article-body { margin-top: var(--space-10); color: var(--muted-foreground); }
+.article-body > * + * { margin-top: var(--space-5); }
+.article-body p {
+  font-size: var(--text-lg);
+  font-weight: var(--font-light);
+  line-height: var(--leading-loose);
+  color: var(--muted-foreground);
+}
+.article-body strong { color: var(--foreground); font-weight: var(--font-semibold); }
+.article-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-body a:hover { color: var(--accent-hover); }
+.article-body h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--foreground);
+  margin-top: var(--space-12);
+}
+.article-body h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--foreground);
+  margin-top: var(--space-8);
+}
+.article-body ul,
+.article-body ol { padding-left: var(--space-6); }
+.article-body li {
+  font-size: var(--text-lg);
+  font-weight: var(--font-light);
+  line-height: var(--leading-loose);
+  color: var(--muted-foreground);
+}
+.article-body li + li { margin-top: var(--space-2); }
+.article-body li::marker { color: var(--accent); }
+.article-body blockquote {
+  margin-top: var(--space-8);
+  padding: var(--space-1) 0 var(--space-1) var(--space-6);
+  border-left: 3px solid var(--accent);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-light);
+  font-style: italic;
+  line-height: var(--leading-snug);
+  color: var(--foreground);
+}
+.article-body figure { margin-top: var(--space-10); }
+.article-body hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin-top: var(--space-12);
 }
 
 /* ==========================================================================
