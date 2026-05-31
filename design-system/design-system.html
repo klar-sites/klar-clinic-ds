@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klar Clinic — Design System</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/klar-clinic-ds/style.css">
 
   <!-- Foundation token config: the catalog of foundation utility classes the
        Klar editor can offer and apply to any element. Kept in lockstep with the
        real utilities in /style.css and with the Foundations sections below.
        Every value references classes that exist in style.css (no phantoms);
        backgrounds are paired with a readable foreground where needed. -->
-  <script type="application/json" data-klar-ds>
+  <script type="application/json" data-klar-ds="">
   {
     "classes": {
       "Text colors": [
@@ -338,7 +336,7 @@
         <button class="btn btn-ghost">Ghost</button>
         <button class="btn btn-primary btn-sm">Small</button>
         <button class="btn btn-primary btn-lg">Large</button>
-        <button class="btn btn-primary" disabled style="opacity:.5;cursor:not-allowed">Disabled</button>
+        <button class="btn btn-primary" disabled="" style="opacity:.5;cursor:not-allowed">Disabled</button>
       </div>
 
       <h3 class="ds-subhead">Badges &amp; Tags</h3>
@@ -353,11 +351,11 @@
       <div class="ds-specimens ds-specimens--grid" data-klar-ds-elements="Forms">
         <div class="field">
           <label class="label" for="ds-name">Name</label>
-          <input class="input" id="ds-name" type="text" placeholder="Anna Svensson" />
+          <input class="input" id="ds-name" type="text" placeholder="Anna Svensson">
         </div>
         <div class="field">
           <label class="label" for="ds-email">Email</label>
-          <input class="input" id="ds-email" type="email" placeholder="anna@example.com" />
+          <input class="input" id="ds-email" type="email" placeholder="anna@example.com">
         </div>
         <div class="field">
           <label class="label" for="ds-area">Area</label>
@@ -591,10 +589,10 @@
               <div class="card" style="padding:var(--space-10)">
                 <form class="flex flex-col gap-5">
                   <div class="field-row">
-                    <div class="field"><label class="label" for="ds-fn">First name</label><input class="input" id="ds-fn" type="text" placeholder="Anna" /></div>
-                    <div class="field"><label class="label" for="ds-ln">Last name</label><input class="input" id="ds-ln" type="text" placeholder="Svensson" /></div>
+                    <div class="field"><label class="label" for="ds-fn">First name</label><input class="input" id="ds-fn" type="text" placeholder="Anna"></div>
+                    <div class="field"><label class="label" for="ds-ln">Last name</label><input class="input" id="ds-ln" type="text" placeholder="Svensson"></div>
                   </div>
-                  <div class="field"><label class="label" for="ds-em">Email</label><input class="input" id="ds-em" type="email" placeholder="anna@example.com" /></div>
+                  <div class="field"><label class="label" for="ds-em">Email</label><input class="input" id="ds-em" type="email" placeholder="anna@example.com"></div>
                   <div class="field"><label class="label" for="ds-tx">Message</label><textarea class="textarea" id="ds-tx" placeholder="Tell us briefly…"></textarea></div>
                   <button type="button" class="btn btn-primary btn-block">Request a time</button>
                 </form>
@@ -639,5 +637,6 @@
       });
     })();
   </script>
-</body>
-</html>
+
+
+</body></html>
